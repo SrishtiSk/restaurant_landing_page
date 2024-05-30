@@ -1,0 +1,82 @@
+.app__reservation{
+    background: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-golden);
+    flex-direction: column;
+
+    padding:2rem 6rem;
+}
+
+.app__reservation-heading{
+    text-align: center;
+}
+
+.app__reservation-form{
+    flex-direction: row;
+    margin-top:3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__reservation-form input, 
+.app__reservation-form select,
+ Options
+{
+    border: 1px solid var(--color-golden);
+    border-radius: 5px;
+    margin-right: 2rem;
+    font-size: 1rem;
+    font-family: var(--family-base);
+    color:var(--color-grey);
+    background: var(--color-black);
+    padding: 0.75rem 1rem;
+    width:100%;
+}
+.app__reservation-form select{
+    width:40%;
+}
+
+.gutter{
+    width:3rem;
+}
+
+
+.app__reservation-form_DatePicker_input{
+    color:var(--color-grey);
+    background: var(--color-black);
+    border: 1px solid var(--color-golden);
+}
+
+.app__reservation button{
+    margin-top: 2rem;
+}
+
+@media screen and (min-width:2000px) {
+    .app__reservation-form{
+        font-size: 2rem;
+    }
+    
+}
+@media screen and (max-width:990px) {
+    .app__reservation-form{
+        flex-direction: column;
+    }
+    .app__reservation-form input, select{
+        margin: 0 0 2rem 0;
+    }
+    .app__reservation-form select{
+        width:100%;
+        margin-right: 0rem;
+    }
+}
+@media screen and (max-width:650px) {
+    .app__reservation{
+        padding: 2rem 0;
+        border:none;
+    }
+}
+@media screen and (max-width:px) {
+    
+}
