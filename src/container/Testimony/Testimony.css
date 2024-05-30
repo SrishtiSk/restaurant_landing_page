@@ -1,0 +1,94 @@
+.app__testimony{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background: var(--color-black);
+}
+.app__testimony-title{
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+.app__testimony_cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2rem;
+    margin:2rem;
+
+}
+
+.app__testimony-testimonyCard{
+    height:100%;
+    width:100%;
+    display: flex;
+    padding: .75rem;
+}
+
+.app__testimony-testimonyCard img{
+    height:5rem;
+}
+.app__testimony-testimonyCard img:nth-child(2){
+    height:2rem;
+    margin-top:4rem;
+    margin-left: -1rem;
+}
+
+.app__testimony-testimonyCard_content{
+    margin-bottom: 1rem;
+}
+
+.app__testimony-testimonyCard_content p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: .5rem;
+    margin-bottom: .5rem;
+}
+
+@media screen and (max-width:990px) {
+    .app__testimony_cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width:450px) {
+    .app__testimony-testimonyCard{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .app__testimony-testimonyCard img{
+        height: 150px;
+        width: 150px;
+    }
+    .app__testimony-testimonyCard img:nth-child(2){
+        width: 2.5rem;
+        margin-top: -.5rem;
+        margin-left:-15rem;
+    }
+    .app__testimony-testimonyCard_content{
+        margin-left:3rem;
+        margin-top:-.5rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .app__testimony-testimonyCard{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .app__testimony-testimonyCard img{
+        height: 150px;
+        width: 150px;
+    }
+    .app__testimony-testimonyCard img:nth-child(2){
+        width: 2.5rem;
+        margin-top: -.5rem;
+        margin-right: -2.5rem;
+    }
+    .app__testimony-testimonyCard_content{
+        margin-left:1.5rem;
+    }
+}

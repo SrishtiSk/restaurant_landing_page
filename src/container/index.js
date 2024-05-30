@@ -8,6 +8,7 @@ import Intro from './Intro/Intro';
 import Laurels from './Laurels/Laurels';
 import SpecialMenu from './Menu/SpecialMenu';
 import Reservation from './Reservation/BookTable';
+import Testimony from './Testimony/Testimony';
 
 export {
   AboutUs,  
@@ -20,4 +21,5 @@ export {
   Intro,
   Laurels,
   SpecialMenu,
+  Testimony
 };

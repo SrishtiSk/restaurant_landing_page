@@ -12,7 +12,7 @@ const AwardCard =({award:{imgUrl, title, subtitle}}) =>(
       <p className='p__opensans'>{subtitle}</p>
     </div>
   </div> 
-);
+); 
 
 const Laurels = () => (
   <div className='app__bg app__wrapper section__padding' id="awards">
